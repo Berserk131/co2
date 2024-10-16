@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Productos Tecnológicos</title>
+</head>
+<body>
+    <h1>Lista de Productos Tecnológicos</h1>
+    <ul>
+    {% for producto in productos %}
+        <li>{{ producto.nombre }} - Huella de carbono: {{ producto.huella_carbono }} kg CO2</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
